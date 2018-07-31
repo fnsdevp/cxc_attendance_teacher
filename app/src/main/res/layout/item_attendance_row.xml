@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m70">
+
+        <LinearLayout
+            android:id="@+id/ll_profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_profile_pic"
+                android:layout_width="@dimen/m60"
+                android:layout_height="@dimen/m60"
+                android:layout_margin="@dimen/m10"
+                android:background="@drawable/black_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_attendance_status"
+            android:layout_toRightOf="@+id/ll_profile_pic"
+            android:gravity="left"
+            android:text="Student Name"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/text_larg" />
+
+        <com.fnspl.hiplaedu_teacher.widget.SquareImageLayout
+            android:id="@+id/iv_attendance_status"
+            android:layout_width="@dimen/m70"
+            android:layout_height="@dimen/m70"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/m5"
+            android:background="@drawable/green_button_small_radius"
+            android:padding="@dimen/m15"
+            android:scaleType="fitXY"
+            android:src="@drawable/absent"
+            android:textSize="@dimen/text_medium" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:background="@color/gray" />
+
+</LinearLayout>

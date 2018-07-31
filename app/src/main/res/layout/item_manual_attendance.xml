@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/m70"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m70"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_profile_pic"
+                android:layout_width="@dimen/m60"
+                android:layout_height="@dimen/m60"
+                android:background="@drawable/black_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="40"
+            android:gravity="left"
+            android:text="Student Name"
+            android:textColor="@color/textColorGray"
+            android:textSize="@dimen/text_larg" />
+
+        <Button
+            android:id="@+id/btn_request_received"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/m35"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/m5"
+            android:layout_weight="35"
+            android:background="@drawable/atten_btn_selector"
+            android:text="@string/attendance"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_medium" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/_2sdp"/>
+
+</LinearLayout>
